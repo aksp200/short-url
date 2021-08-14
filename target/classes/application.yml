@@ -1,0 +1,13 @@
+server:
+  port: 80
+  contextPath: /
+
+spring:
+  application:
+    name: short-url
+
+app:
+  config:
+    hostname: http://sh.rt
+    shortToLong: shortToLong.json
+    longToShort: longToShort.json

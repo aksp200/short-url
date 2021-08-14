@@ -2,7 +2,6 @@ package com.shorturl.model;
 
 import org.hibernate.validator.constraints.URL;
 
-import javax.validation.constraints.NotBlank;
 import java.util.Objects;
 
 public class ShortUrlRequestDto {
