@@ -1,10 +1,10 @@
-package com.shorturl.svc;
+package com.shorturl.repo;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Async;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 
 import javax.annotation.PostConstruct;
 import java.io.File;
@@ -13,8 +13,8 @@ import java.util.Map;
 
 import static org.springframework.util.ResourceUtils.getFile;
 
-@Service
-public class StoreMapsToFilesSvcImpl implements StoreMapsToFilesSvc {
+@Repository
+public class StoreMapsRepoFileImpl implements StoreMapsRepo {
 
     private final Map<String, String> shortToLongMap;
     private final Map<String, String> longToShortMap;
@@ -27,7 +27,7 @@ public class StoreMapsToFilesSvcImpl implements StoreMapsToFilesSvc {
 
     private ObjectMapper objectMapper = new ObjectMapper();
 
-    public StoreMapsToFilesSvcImpl(Map<String, String> shortToLongMap, Map<String, String> longToShortMap) {
+    public StoreMapsRepoFileImpl(Map<String, String> shortToLongMap, Map<String, String> longToShortMap) {
         this.shortToLongMap = shortToLongMap;
         this.longToShortMap = longToShortMap;
     }

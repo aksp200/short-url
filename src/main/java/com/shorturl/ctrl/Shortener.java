@@ -3,6 +3,7 @@ package com.shorturl.ctrl;
 import com.shorturl.model.ShortUrlRequestDto;
 import com.shorturl.model.ShortUrlResponseDto;
 import com.shorturl.svc.ShortenerAccessSvc;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 import java.io.IOException;
 import java.net.URISyntaxException;
+
+import static org.springframework.http.HttpStatus.CREATED;
 
 @RestController("v1")
 public class Shortener {
@@ -21,8 +24,8 @@ public class Shortener {
     }
 
     @PostMapping("/short")
-    public ShortUrlResponseDto createShort(@RequestBody @Valid ShortUrlRequestDto shortUrlRequestDto)
+    public ResponseEntity<ShortUrlResponseDto> createShort(@RequestBody @Valid ShortUrlRequestDto shortUrlRequestDto)
             throws IOException, URISyntaxException {
-        return shortenerAccessSvc.createShortUrl(shortUrlRequestDto);
+        return new ResponseEntity<>(shortenerAccessSvc.createShortUrl(shortUrlRequestDto), CREATED);
     }
 }
