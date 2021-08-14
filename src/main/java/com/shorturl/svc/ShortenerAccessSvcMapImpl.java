@@ -2,6 +2,7 @@ package com.shorturl.svc;
 
 import com.shorturl.model.ShortUrlRequestDto;
 import com.shorturl.model.ShortUrlResponseDto;
+import com.shorturl.repo.StoreMapsRepo;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -15,12 +16,12 @@ public class ShortenerAccessSvcMapImpl implements ShortenerAccessSvc {
     private Map<String,String> shortToLongMap;
     private Map<String,String> longToShortMap;
     private ShortenerSvc shortenerSvc;
-    private StoreMapsToFilesSvc storeMapsToFilesSvc;
+    private StoreMapsRepo storeMapsToFilesSvc;
 
     @Value("${app.config.hostname}")
     private String hostname;
 
-    public ShortenerAccessSvcMapImpl(Map<String, String> shortToLongMap, Map<String, String> longToShortMap, ShortenerSvc shortenerSvc, StoreMapsToFilesSvc storeMapsToFilesSvc) {
+    public ShortenerAccessSvcMapImpl(Map<String, String> shortToLongMap, Map<String, String> longToShortMap, ShortenerSvc shortenerSvc, StoreMapsRepo storeMapsToFilesSvc) {
         this.shortToLongMap = shortToLongMap;
         this.longToShortMap = longToShortMap;
         this.shortenerSvc = shortenerSvc;
