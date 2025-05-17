@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca12d9c9-03d0-4889-a3f9-cd33caee5df4" name="Default Changelist" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/shorturl/ctrl/DirectorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shorturl/ctrl/Shortener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shorturl/ctrl/Shortener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shorturl/svc/ShortenerAccessSvcMapImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shorturl/svc/ShortenerAccessSvcMapImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shorturl/svc/StoreMapsToFilesSvc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shorturl/repo/StoreMapsRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shorturl/svc/StoreMapsToFilesSvcImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shorturl/repo/StoreMapsRepoFileImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shorturl/ctrl/Shortener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shorturl/ctrl/Shortener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shorturl/svc/ShortenerAccessSvcMapImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shorturl/svc/ShortenerAccessSvcMapImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shorturl/svc/StoreMapsToFilesSvc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shorturl/svc/StoreMapsToFilesSvcImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shorturl/svc/StoreMapsToFilesSvcImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/longToShort.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/longToShort.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shortToLong.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shortToLong.json" afterDir="false" />
-    </list>
+    <list default="true" id="ca12d9c9-03d0-4889-a3f9-cd33caee5df4" name="Default Changelist" comment="initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,29 +23,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
   <component name="ProjectId" id="1wgZUmG8YnrcCDlR840uxDpV2uR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.shorturl.ctrl" />
