@@ -13,6 +13,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
@@ -37,6 +39,9 @@ public class UrlService {
     private String secretKey;
 
     public String shortenUrl(String originalUrl) {
+
+        originalUrl = getUrlWithHttp(originalUrl);
+
         UrlMapping mapping = new UrlMapping();
         mapping.setOriginalUrl(originalUrl);
         mapping.setCreatedAt(LocalDateTime.now());
@@ -52,21 +57,27 @@ public class UrlService {
         return shortCode;
     }
 
-    public Optional<String> resolveUrl(String shortCode) {
-        UrlMapping mapping = repository.findByShortCode(shortCode).orElse(null);
-        Long id;
-        String url = null;
-
-        if(mapping!=null) {
-            id = mapping.getId();
-            url = mapping.getOriginalUrl();
-            log.info("id:{}, url:{}",id,url);
-            taskExecutor.execute(() -> updateRedirectCount(id));
-        } else {
-            id = null;
+    private static String getUrlWithHttp(String originalUrl) {
+        try {
+            URI uri = new URI(originalUrl);
+            if (uri.getScheme() == null) {
+                originalUrl = "https://" + originalUrl;
+            }
+        } catch (URISyntaxException e) {
+            throw new IllegalArgumentException("Invalid URL format: " + originalUrl, e);
         }
-        return Optional.ofNullable(url);
+        return originalUrl;
     }
+
+    @Transactional(readOnly = true)
+    public Optional<String> resolveUrl(String code) {
+        return repository.findByShortCode(code).map(mapping -> {
+            // Delegate to async thread after transaction-safe values are extracted
+            taskExecutor.execute(() -> redirectCountRepository.incrementCount(mapping.getId()));
+            return mapping.getOriginalUrl();
+        });
+    }
+
 
     @Transactional
     public void updateRedirectCount(Long id) {
