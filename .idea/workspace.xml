@@ -5,19 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca12d9c9-03d0-4889-a3f9-cd33caee5df4" name="Default Changelist" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/cntrl/UrlController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/Url.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/UrlMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repo/UrlMappingRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/svc/UrlService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/RedirectCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/UrlMappingView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repo/RedirectCountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/svc/RedirectCounterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/scripts/001-create-url-mapping.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/scripts/002-create-redirect-count.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/ShortUrlApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/ShortUrlApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/cntrl/UrlController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/cntrl/UrlController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/UrlMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/UrlMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repo/UrlMappingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repo/UrlMappingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/svc/UrlService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/svc/UrlService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/ShortUrlApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/ShortUrlApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/cntrl/UrlController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/cntrl/UrlController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/model/UrlMapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/model/UrlMapping.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repo/UrlMappingRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repo/UrlMappingRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/svc/UrlService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/svc/UrlService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +80,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/akshay/git/short-url",
+    "last_opened_file_path": "/home/akshay/git/short-url/src/main/resources/db/changelog/scripts",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -80,31 +88,37 @@
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.shorturl.ctrl" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.demo.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/db/changelog/scripts" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\akshay\git\short-url\src\main\resources" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.shorturl.ctrl" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.shorturl.svc" />
       <recent name="com.shorturl.model" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\akshay\git\short-url\src\main\resources" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.com.example.demo.ShortUrlApplication">
+  <component name="RunManager" selected="Application.ShortUrlApplication">
     <configuration name="ShortUrlApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
-        <env name="SHORT_URL_SECRET" value="LTMZ!ocUYX7LYTgdoUBKXYwh@73d0vA!" />
-        <env name="spring.datasource.password" value="postgres" />
+        <env name="short.url.secret" value="LT!Y1dh@73d0vA!" />
+        <env name="spring.datasource.password" value="Url!DB@98$007!" />
       </envs>
-      <option name="MAIN_CLASS_NAME" value="com.shorturl.ShortUrlApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.ShortUrlApplication" />
       <module name="short-url" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shorturl.*" />
+          <option name="PATTERN" value="com.example.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,23 +132,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.shorturl.repo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.example.demo.ShortUrlApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <envs>
-        <env name="short.url.secret" value="LTMZ!ocUYX7LYTgdoUBKXYwh@73d0vA!" />
-        <env name="spring.datasource.password" value="Url!DB@98$007!" />
-      </envs>
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.ShortUrlApplication" />
-      <module name="short-url" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,15 +171,13 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.com.example.demo.ShortUrlApplication" />
-      <item itemvalue="Application.ShortenerSvcImpl" />
       <item itemvalue="Application.ShortUrlApplication" />
+      <item itemvalue="Application.ShortenerSvcImpl" />
       <item itemvalue="JUnit.DirectorTest.redirectToLongUrl" />
       <item itemvalue="JUnit.ShortUrlApplicationTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.example.demo.ShortUrlApplication" />
         <item itemvalue="Application.ShortUrlApplication" />
         <item itemvalue="JUnit.DirectorTest.redirectToLongUrl" />
         <item itemvalue="JUnit.ShortUrlApplicationTests" />
@@ -244,6 +239,19 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/shorturl/ctrl/DirectorTest.java</url>
           <line>68</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/ShortUrlApplication.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/cntrl/UrlController.java</url>
+          <line>29</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
